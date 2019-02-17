@@ -40,7 +40,7 @@ class Gifs extends Component {
         <ul>
           {items.map(item => (
             <li key={item.id}>
-              {item.name} {item.price}
+              <img src={item.images.fixed_height_still.url} alt=""></img>
             </li>
           ))}
         </ul>
