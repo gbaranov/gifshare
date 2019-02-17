@@ -30,11 +30,22 @@ class Gifs extends Component {
   }
 
   render() {
-    return (
-      <div className="gifs">
-
-      </div>
-    );
+    const { error, isLoaded, items } = this.state;
+    if (error) {
+      return <div>Error: {error.message}</div>;
+    } else if (!isLoaded) {
+      return <div>Loading...</div>;
+    } else {
+      return (
+        <ul>
+          {items.map(item => (
+            <li key={item.id}>
+              {item.name} {item.price}
+            </li>
+          ))}
+        </ul>
+      );
+    }
   }
 }
 

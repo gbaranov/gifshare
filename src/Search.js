@@ -5,8 +5,8 @@ class Search extends Component {
     return (
       <div className="search">
         <form>
-        <div class="form-group">
-            <input type="text" class="form-control" id="search-query" placeholder="Search..." />
+        <div className="form-group">
+            <input type="text" className="form-control" id="search-query" placeholder="Search..." />
         </div>
         </form>
       </div>
