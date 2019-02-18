@@ -40,7 +40,7 @@ class Gifs extends Component {
         <ul>
           {items.map(item => (
             <li key={item.id}>
-              <img src={item.images.fixed_height_still.url} alt=""></img>
+              <img src={item.images.fixed_height_still.url} className="img-thumbnail mx-auto d-block" alt=""></img>
             </li>
           ))}
         </ul>
