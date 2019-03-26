@@ -7,27 +7,34 @@ class Gifs extends Component {
       error: null,
       isLoaded: false,
       items: []
-    };
+    }
+    this.baseState = this.state 
   }
 
-  componentDidMount() {
-    fetch("https://api.giphy.com/v1/gifs/search?q=pepe&api_key=V6qydC22ACu4zLq6xo6ZVjd8fIx9VZkG")
-      .then(res => res.json())
-      .then(
-        (result) => {
-          this.setState({
-            isLoaded: true,
-            items: result.data
-          });
-        },
-        (error) => {
-          this.setState({
-            isLoaded: true,
-            error
-          });
-        }
-      )
+  componentDidUpdate() {
+    this.fetchData();
   }
+
+  fetchData() {
+    fetch("https://api.giphy.com/v1/gifs/search?q=" + this.props.query + "&api_key=V6qydC22ACu4zLq6xo6ZVjd8fIx9VZkG")
+    .then(res => res.json())
+    .then(
+      (result) => {
+        this.setState({
+          isLoaded: true,
+          items: result.data
+        });
+      },
+      (error) => {
+        this.setState({
+          isLoaded: true,
+          error
+        });
+      }
+    )
+  }
+
+  
 
   render() {
     const { error, isLoaded, items } = this.state;

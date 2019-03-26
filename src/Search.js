@@ -10,7 +10,6 @@ class Search extends Component {
   }
 
 handleSubmit(event) {
-  alert(this.input.value);
   this.setState({data: this.input.value});
   this.props.searchQuery(this.input.value);
   event.preventDefault();

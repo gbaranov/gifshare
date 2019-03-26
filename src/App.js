@@ -19,7 +19,7 @@ searchQuery = (query) => {
     return (
       <div className="App">
         <Search searchQuery={this.searchQuery}/>
-        <Gifs />
+        <Gifs query={this.state.search}/>
       </div>
     );
   }
