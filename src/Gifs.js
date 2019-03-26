@@ -11,7 +11,7 @@ class Gifs extends Component {
   }
 
   componentDidMount() {
-    fetch("https://api.giphy.com/v1/gifs/search?q=wow&api_key=V6qydC22ACu4zLq6xo6ZVjd8fIx9VZkG")
+    fetch("https://api.giphy.com/v1/gifs/search?q=pepe&api_key=V6qydC22ACu4zLq6xo6ZVjd8fIx9VZkG")
       .then(res => res.json())
       .then(
         (result) => {
