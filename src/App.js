@@ -1,28 +1,19 @@
 import React, { Component } from 'react';
-import Search from './Search.js';
-import Gifs from './Gifs.js';
+import SearchBar from './components/SearchBar';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      search: null
+
+    handleTermChange(term) {
+        console.log(term);
     }
-  }
 
-searchQuery = (query) => {
-  this.setState({search: query});
-}
-
-
-  render() {
-    return (
-      <div className="App">
-        <Search searchQuery={this.searchQuery}/>
-        <Gifs query={this.state.search}/>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                <SearchBar onTermChange={this.handleTermChange} />
+            </div>
+        );
+    }
 }
 
 export default App;
