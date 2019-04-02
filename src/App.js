@@ -10,11 +10,15 @@ class App extends Component {
         this.state = {
             gifs: []
         }
+        this.handleTermChange = this.handleTermChange.bind(this);
     }
+
     handleTermChange(term) {
-        const url = 'http://api.giphy.com/v1/gifs/search?q=${term}&api_key=V6qydC22ACu4zLq6xo6ZVjd8fIx9VZkG';
-        request.get(url, function(err, res) {
-            console.log(res.body.data[0]);
+        const url = `http://api.giphy.com/v1/gifs/search?q=${term.replace(/\s/g, '+')}&api_key=dc6zaTOxFJmzC`;
+
+        request.get(url, (err, res) => {
+            console.log(res.body.data);
+            this.setState({ gifs: res.body.data })
         });
     }
 
