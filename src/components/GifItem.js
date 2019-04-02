@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 
-class GifItem extends Component {
-
-}
+const GifItem = (image) => {
+    return (
+        <li>
+            <img src={image.gif.url} />
+        </li>
+    );
+};
 
 export default GifItem;
