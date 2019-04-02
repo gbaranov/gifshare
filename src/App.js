@@ -30,6 +30,7 @@ class App extends Component {
         return (
             <div>
                 <SearchBar onTermChange={this.handleTermChange} />
+                <GifList gifs={this.state.gifs} />
             </div>
         );
     }

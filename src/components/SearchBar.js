@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class SearchBar extends Component {
     constructor() {
         super();
-        this.state = { term: ''}
+        this.state = { term: '' }
     }
 
     onInputChange(term) {
