@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SearchBar from './components/SearchBar';
 import GifList from './components/GifList';
 import request from 'superagent';
+import Header from './components/Header';
 
 class App extends Component {
     constructor() {
@@ -24,6 +25,7 @@ class App extends Component {
     render() {
         return (
             <div className="container">
+                <Header />
                 <SearchBar onTermChange={this.handleTermChange} />
                 <GifList gifs={this.state.gifs} />
             </div>
