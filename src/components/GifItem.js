@@ -24,7 +24,7 @@ import {
 const GifItem = (image) => {
     return (
         <div className="row">
-            <div className="card gif-card col-centered">
+            <div className="card gif-card col-centered" >
                 <img className="card-img-top" src={image.gif.images.downsized.url} alt={image.gif.title}></img>
                 <div className="row social-block col-centered">
                         <TwitterShareButton url={image.gif.images.downsized.url}>
