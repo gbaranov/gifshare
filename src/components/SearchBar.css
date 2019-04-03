@@ -5,5 +5,10 @@
 
 .search-input{
     width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline:none;
+    box-shadow: none;
 }
 
