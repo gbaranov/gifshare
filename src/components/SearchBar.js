@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from './SearchBar.css';
 
 class SearchBar extends Component {
     constructor() {
@@ -7,14 +8,18 @@ class SearchBar extends Component {
     }
 
     onInputChange(term) {
-        this.setState({term});
+        this.setState({ term });
         this.props.onTermChange(term);
     }
 
     render() {
         return (
-            <div className="search">
-                <input onChange={event => this.onInputChange(event.target.value)} />
+            <div className="row">
+                <div className="search col-centered">
+                    <div className="form-group">
+                        <input type="text" placeholder="Search..." className="form-control search-input" onChange={event => this.onInputChange(event.target.value)} />
+                    </div>
+                </div>
             </div>
         )
     }

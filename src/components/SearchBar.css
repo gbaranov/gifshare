@@ -1,0 +1,11 @@
+.col-centered {
+    float: none;
+    margin: auto;
+}
+
+.search-input{
+    width: 300px;
+}
+.search {
+    margin-top: 10px;
+}

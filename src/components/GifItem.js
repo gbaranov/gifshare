@@ -2,9 +2,9 @@ import React from 'react';
 
 const GifItem = (image) => {
     return (
-        <li>
-            <img src={image.gif.images.downsized.url} />
-        </li>
+        <div className="card gif-card">
+            <img className="card-img-top" src={image.gif.images.downsized.url} alt={image.gif.title}></img>
+        </div>
     );
 };
 
