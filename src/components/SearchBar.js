@@ -15,9 +15,9 @@ class SearchBar extends Component {
     render() {
         return (
             <div className="row">
-                <div className="search col-centered">
+                <div className="search col-centered col-md-6">
                     <div className="form-group">
-                        <input type="text" placeholder="Search..." className="form-control search-input" onChange={event => this.onInputChange(event.target.value)} />
+                        <input type="text" placeholder="Search..." className="form-control-lg search-input" onChange={event => this.onInputChange(event.target.value)} />
                     </div>
                 </div>
             </div>
