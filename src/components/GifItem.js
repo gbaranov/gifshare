@@ -28,28 +28,28 @@ const GifItem = (image) => {
                 <img className="card-img-top" src={image.gif.images.downsized.url} alt={image.gif.title}></img>
                 <div className="row social-block col-centered">
                         <TwitterShareButton url={image.gif.images.downsized.url}>
-                            <TwitterIcon size={45} round={true} />
+                            <TwitterIcon size={45} round={false} />
                         </TwitterShareButton>
                         <FacebookShareButton url={image.gif.images.downsized.url}>
-                            <FacebookIcon size={45} round={true} />
+                            <FacebookIcon size={45} round={false} />
                         </FacebookShareButton>
                         <WhatsappShareButton url={image.gif.images.downsized.url}>
-                            <WhatsappIcon size={45} round={true} />
+                            <WhatsappIcon size={45} round={false} />
                         </WhatsappShareButton>
                         <LinkedinShareButton url={image.gif.images.downsized.url}>
-                            <LinkedinIcon size={45} round={true} />
+                            <LinkedinIcon size={45} round={false} />
                         </LinkedinShareButton>
                         <ViberShareButton url={image.gif.images.downsized.url}>
-                            <ViberIcon size={45} round={true} />
+                            <ViberIcon size={45} round={false} />
                         </ViberShareButton>
                         <VKShareButton url={image.gif.images.downsized.url}>
-                            <VKIcon size={45} round={true} />
+                            <VKIcon size={45} round={false} />
                         </VKShareButton>
                         <TelegramShareButton url={image.gif.images.downsized.url}>
-                            <TelegramIcon size={45} round={true} />
+                            <TelegramIcon size={45} round={false} />
                         </TelegramShareButton>
                         <EmailShareButton url={image.gif.images.downsized.url}>
-                            <EmailIcon size={45} round={true} />
+                            <EmailIcon size={45} round={false} />
                         </EmailShareButton>
                 </div>
             </div>
