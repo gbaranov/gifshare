@@ -1,5 +1,5 @@
 ## Gif Share Application
-Single page app that allows you to search in thousands gif's from Gyphy database.
+Single page app that allows you to search in thousands gifs from Gyphy database.
 
 ## Libraries used
 React, Bootstrap, [React-share](https://www.npmjs.com/package/react-share)
